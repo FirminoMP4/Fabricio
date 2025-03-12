@@ -1,3 +1,4 @@
+
 //comentario de uma linha 
 /*
 comentario em bloco
@@ -5,6 +6,9 @@ comentario em bloco
 
 //variaveis
 //var -> não usa no dia a dia
+
+/*
+
 let nome = "Firmino";
 const idade = 20;
 
@@ -59,3 +63,6 @@ frutas.forEach(fruta => console.log(fruta))
 
 frutas.pop()
 console.log(frutas)
+
+*/
+

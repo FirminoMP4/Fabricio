@@ -1,0 +1,55 @@
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, View, ScrollView } from 'react-native';
+import { PaperProvider, Card, Title, Paragraph, Text, Button, Divider  } from 'react-native-paper'
+
+export default function App() {
+
+  return (
+    
+    <PaperProvider>
+
+      <ScrollView>
+
+    <View style={styles.container}>
+      <StatusBar style="auto" />
+
+    <Button mode='contained'onPress={() => alert('clicou')} >Clicar</Button>
+
+    <Text variant='bodyLarge'>um texto qualquer </Text>
+    <Divider style={{width: '90%'}} />
+    <Text variant='displayLarge'>um texto qualquer </Text>
+    <Divider style={{width: '90%'}} />
+    <Text variant='headlineLarge'>um texto qualquer </Text>
+    <Divider style={{width: '90%'}} />
+    <Text variant='labelLarge'>um texto qualquer </Text>
+    <Divider style={{width: '90%'}} />
+    <Text variant='titleLarge'>um texto qualquer </Text>
+    <Divider style={{width: '90%'}} />
+    <Text> Um texto qualquer</Text>
+
+
+
+    <Card style={{ margin: 10}}>
+      <Card.Content>
+        <Title> um titulo</Title>
+        <Paragraph> lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+        lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+        </Paragraph>
+      </Card.Content>
+    </Card>
+    </View>
+    </ScrollView>
+    </PaperProvider>
+    
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingTop: 50,
+  },
+});

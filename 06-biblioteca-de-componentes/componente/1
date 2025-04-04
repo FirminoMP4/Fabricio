@@ -1,0 +1,13 @@
+<FlatList 
+    
+      data={listaCards}
+      renderItem={({ item }) => (
+      <Card>
+        <Card.Content>
+          <Title>{item.titulo}</Title>
+          <Paragraph>{item.descricao}</Paragraph>
+        </Card.Content>
+        <Card.Cover source={{ uri:item.imagem}}/>
+      </Card>
+      ) }
+     />
